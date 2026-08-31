@@ -1,0 +1,47 @@
+{
+  "data": {
+    "rows": 847000,
+    "seed": 42,
+    "is_synthetic": true
+  },
+  "model": {
+    "average_precision": 0.9988155372109073,
+    "precision": 0.950470949306805,
+    "recall": 0.9995548135781859,
+    "threshold": 0.00012619430347321088,
+    "requested_precision": 0.9,
+    "validation_precision_target": 0.9500000000000001,
+    "true_positive": 8981,
+    "false_positive": 468,
+    "true_negative": 159947,
+    "false_negative": 4,
+    "train_rows": 508200,
+    "validation_rows": 169400,
+    "test_rows": 169400
+  },
+  "experiment": {
+    "control_n": 11997,
+    "treatment_n": 12003,
+    "control_completion_rate": 0.7751104442777361,
+    "treatment_completion_rate": 0.8577855536115971,
+    "absolute_lift": 0.08267510933386102,
+    "relative_lift": 0.10666236011166046,
+    "z_statistic": 16.543067469056748,
+    "p_value": 1.7963742808102337e-61,
+    "chi_square": 273.67308128576326,
+    "chi_square_p_value": 1.7963742808106444e-61,
+    "is_simulated": true
+  },
+  "top_segment": {
+    "region": "West",
+    "environment": "rural",
+    "events": 8939,
+    "anomaly_rate": 0.9995525226535407,
+    "completion_rate": 0.4273408658686654,
+    "median_handoff_ms": 2608.8,
+    "mean_signal_dbm": -112.07457769325428,
+    "anomaly_lift": 17.919800755371973,
+    "impact_score": 160113.41974924857
+  },
+  "statistical_anomaly_days": 10
+}
