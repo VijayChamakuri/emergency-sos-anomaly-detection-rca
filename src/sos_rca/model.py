@@ -98,9 +98,9 @@ def train_temporal_model(frame: pd.DataFrame, precision_target: float = 0.90) ->
         "false_positive": int(fp),
         "true_negative": int(tn),
         "false_negative": int(fn),
-        "train_rows": int(len(train)),
-        "validation_rows": int(len(validation)),
-        "test_rows": int(len(test)),
+        "train_rows": len(train),
+        "validation_rows": len(validation),
+        "test_rows": len(test),
     }
     scored = test.copy()
     scored["anomaly_probability"] = probability

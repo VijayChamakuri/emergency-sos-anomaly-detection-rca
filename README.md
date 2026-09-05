@@ -98,7 +98,7 @@ source .venv/bin/activate
 python3 -m pip install -e .
 ```
 
-For the exact dependency versions used to produce the checked artifacts:
+For the exact dependency versions used to produce the checked artifacts on Python 3.11:
 
 ```bash
 python3 -m pip install -r requirements-lock.txt
@@ -179,11 +179,12 @@ A reproducible randomized simulation compares original and improved handoff timi
 
 ```bash
 make test
+python3 -m ruff check src tests scripts
 PYTHONPYCACHEPREFIX=/tmp/sos-rca-pycache python3 -m compileall -q src tests scripts
 git diff --check
 ```
 
-The current repository passes all five unit and integration tests. The generated dashboard was also checked at desktop and mobile widths for overflow, semantic structure, synthetic-data disclosure, and browser console errors.
+The current repository passes all five unit and integration tests. GitHub Actions runs Ruff and the test suite on Python 3.11. The generated dashboard was also checked at desktop and mobile widths for overflow, semantic structure, synthetic-data disclosure, and browser console errors.
 
 ## Documentation
 

@@ -58,8 +58,8 @@ def simulate_handoff_experiment(rows: int = 24_000, seed: int = 7) -> dict:
     table = np.array([[treatment.sum(), len(treatment) - treatment.sum()], [control.sum(), len(control) - control.sum()]])
     chi2, chi_p, _, _ = chi2_contingency(table, correction=False)
     return {
-        "control_n": int(len(control)),
-        "treatment_n": int(len(treatment)),
+        "control_n": len(control),
+        "treatment_n": len(treatment),
         "control_completion_rate": float(p0),
         "treatment_completion_rate": float(p1),
         "absolute_lift": float(p1 - p0),

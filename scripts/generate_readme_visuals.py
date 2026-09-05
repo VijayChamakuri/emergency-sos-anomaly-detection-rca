@@ -11,7 +11,6 @@ import matplotlib.ticker as mtick
 import numpy as np
 import pandas as pd
 
-
 ROOT = Path(__file__).resolve().parents[1]
 REPORTS = ROOT / "artifacts" / "reports"
 OUTPUT = ROOT / "docs" / "images"
